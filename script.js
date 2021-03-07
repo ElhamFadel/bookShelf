@@ -18,6 +18,42 @@ var books = [
         author: "Elizabeth Gilbert",
         image: "./img/book4.jpg"
     },
+     {
+        title: " My Conversations with Chimpanzees",
+        author: " Roger Fouts",
+        image: "./img/book1.jpg"
+    },
+    {
+        title: "Dance with Dragons",
+        author: " George R.R. Martin",
+        image: "./img/book2.jpg"
+    }, {
+        title: "Harry Potter and the Goblet of Fire",
+        author: " J.K. Rowling Doe",
+        image: "./img/book3.jpg"
+    }, {
+        title: "City of Girls",
+        author: "Elizabeth Gilbert",
+        image: "./img/book4.jpg"
+    },
+     {
+        title: " My Conversations with Chimpanzees",
+        author: " Roger Fouts",
+        image: "./img/book1.jpg"
+    },
+    {
+        title: "Dance with Dragons",
+        author: " George R.R. Martin",
+        image: "./img/book2.jpg"
+    }, {
+        title: "Harry Potter and the Goblet of Fire",
+        author: " J.K. Rowling Doe",
+        image: "./img/book3.jpg"
+    }, {
+        title: "City of Girls",
+        author: "Elizabeth Gilbert",
+        image: "./img/book4.jpg"
+    },
 ]
 for(var i=0; i < books.length; i++) {
     const book = document.createElement("div");
