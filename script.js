@@ -55,6 +55,7 @@ var books = [
         image: "./img/book4.jpg"
     },
 ]
+//print all books
 for(var i=0; i < books.length; i++) {
     const book = document.createElement("div");
     book.classList.add('book')
@@ -72,13 +73,11 @@ for(var i=0; i < books.length; i++) {
     book.appendChild(author)
     bookShelf.appendChild(book)
 }
-//add book
+//open modale when client want to add new book 
 document.querySelector(".addBook").addEventListener("click",function(){
     document.querySelector(".modale").style.display = "flex";
 });
-// close Modal
-
-
+// close Modal x
 document.querySelector(".close").addEventListener("click",function(){
         document.querySelector(".modale").style.display = "none";
 });
@@ -89,6 +88,8 @@ var newBook = {
     image: ""
 }
 function handleSave(){
+    // add new book and push it for  array 
+    // 1- first step fetch all data from form 
     document.querySelector(".modale").style.display = "none";
     const titleValue = document.querySelector("#title").value;
     document.querySelector("#title").value="";
@@ -100,13 +101,12 @@ function handleSave(){
             newBook.title=titleValue;
             newBook.author= autherValue;
             newBook.image=image;
-         
-         books.push(newBook);
-          addnewBook(books.length-1);
-    
+            books.push(newBook);
+            addnewBook(books.length-1);
 }
 
 function addnewBook (index){
+    // add to array and object 
     const book = document.createElement("div");
     book.classList.add('book')
 
