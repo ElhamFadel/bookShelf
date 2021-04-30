@@ -1,4 +1,6 @@
+ // container that's will contain all books 
 var bookShelf = document.querySelector('.group__books__row')
+ // array will use it as space of storage for your books
 var books = [
     {
         title: " My Conversations with Chimpanzees",
@@ -63,11 +65,11 @@ for(var i=0; i < books.length; i++) {
     var title = document.createElement('h3')
     var author = document.createElement('h4')
     var image = document.createElement('img')
-
+    // there we will add a text to textContent node 
     title.textContent = books[i].title
     author.textContent = books[i].author
     image.src = books[i].image
-
+    // append all the elemants as childe  which was created it to the specific parents
     book.appendChild(image)
     book.appendChild(title)
     book.appendChild(author)
