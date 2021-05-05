@@ -1,6 +1,6 @@
  // container that's will contain all books 
 var bookShelf = document.querySelector('.group__books__row')
- // array will use it as space of storage for your books
+ // array will use it as space of storage for save all your books
 var books = [
     {
         title: " My Conversations with Chimpanzees",
@@ -57,7 +57,8 @@ var books = [
         image: "./img/book4.jpg"
     },
 ]
-//print all books
+//======print all books======
+//
 for(var i=0; i < books.length; i++) {
     const book = document.createElement("div");
     book.classList.add('book')
