@@ -107,7 +107,7 @@ function handleSave(){
             books.push(newBook);
             addnewBook(books.length-1);
 }
-
+// this function to create elements for the last book in your array
 function addnewBook (index){
     // add to array and object 
     const book = document.createElement("div");
