@@ -1,7 +1,7 @@
  // container that's will contain all books 
-var bookShelf = document.querySelector('.group__books__row')
+const BOOKSHELF = document.querySelector('.group-books-row')
  // array will use it as space of storage for save all your books
-var books = [
+let books = [
     {
         title: " My Conversations with Chimpanzees",
         author: " Roger Fouts",
